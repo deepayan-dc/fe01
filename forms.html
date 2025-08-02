@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Forms
+        </title>
+    </head>
+    <body>
+        
+        <h1>HTML Forms</h1>
+
+        <form action="">
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="enter username" required>
+            <br><br>
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email" placeholder="enter email" required>
+            <br><br>
+            <label for="password">Enter password</label>
+            <input type="password" id="password" name="password" placeholder="enter password" required>
+            <br><br>
+            <p>Select gender</p>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="other">Other <br>
+            <br><br>
+            <label for="question">Security question</label>
+            <select name="question" id="question">
+                <option value="one">what is your favourite fruit?</option>
+                <option value="two">what sport fo you watch?</option>
+                <option value="three">what is your preferred language?</option>
+            </select>
+            <br><br>
+            <label for="answer">Security question answer</label>
+            <input type="text" id="answer" name="answer">
+            <br><br>
+            <label for="bio">Bio</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter you bio..."></textarea>
+            <br><br>
+            <input type="submit" value="Submit the form">
+        </form>
+    </body>
+</html>
