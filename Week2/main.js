@@ -114,4 +114,79 @@ while (i < 10) {
     console.log(`While Loop Number: ${i}`);
     i++;
 }
+//Advanced array options
+//forEach
+todos.forEach(function(todo) {
+    console.log(todo.text)
+});
+//map
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+console.log(todoText);
+//filter
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isCompleted === true;
+}).map(function(todo) {
+    return todo.text;
+});
+console.log(todoCompleted);
+
+//if-else
+
+const a = 10;
+if(a === 10) {
+    console.log('a is 10');
+} else {
+    console.log('a is not 10');
+}
+
+const b = 6;
+const color = b > 5 ? 'red' : 'blue';
+console.log(color);
+
+//creating and calling functions
+function addNums(num1, num2) {
+    console.log(num1 + num2);
+}
+addNums(3,4);
+
+//Constructor function
+/*function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+}
+
+Person.prototype.getBirthYear = function() {
+    return this.dob.getFullYear();
+}
+
+Person.prototype.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+}*/
+
+//Creating classes
+class Person {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+//Instantiate objects
+const person1 = new Person('John', 'Doe', '4-3-1980');
+const person2 = new Person('Mary', 'Smith', '3-6-1970');
+console.log(person1.dob);
+console.log(person1.getBirthYear());
+console.log(person2.getFullName());
 
