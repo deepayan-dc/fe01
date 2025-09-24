@@ -1,22 +1,27 @@
 body {
-    background-color: rgb(43, 42, 42);
+    background-color:#4C6675;
     color: white;
     /* display: flex;
     align-items: center;
     justify-content: center; */
     margin: 0;
     padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/* header */
 .header{
     border: 1px solid black;
     margin-left: 150px;
     margin-right: 150px;
     padding: 12px;
     border-radius: 10px;
+    background-color: #3D464B;
 }
 .header h1{
     text-align: center;
 }
+
+/* new task input */
 .newtask{
     display: flex;
     gap: 20px;
@@ -27,30 +32,56 @@ body {
 }
 .newtask .input input{
     flex: 2;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
+    border: none;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
 .newtask div.input{
     flex: 1;
+    background-color: #3D464B;
+    padding: 20px;
+    border-radius: 10px;
 }
 .newtask div.date{
     flex: 1;
+    background-color: #3D464B;
+    padding: 20px;
+    border-radius: 10px;
 }   
 .newtask .input{
     display: flex;
     gap: 10px;
 }
 .newtask .input label{
-    flex: 0.5;
+    flex: 0.7;
 }
 .newtask .input button {
     flex: 0.5;
+    background-color: #2A2F33;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .newtask .date{
     display: flex;
     gap: 20px;
     margin-left: 20px;
 }
+.newtask .date input {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: whitesmoke;
+    color: rgb(23, 21, 21);
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* filter */
 .filters{
     display: flex;
     gap: 20px;
@@ -61,9 +92,15 @@ body {
 }
 .filters div.filter-buttons{
     flex: 1;
+    background-color: #3D464B;
+    padding: 20px;
+    border-radius: 10px;
 }
 .filters div.count{
     flex: 1 ;
+    background-color: #3D464B;
+    padding: 20px;
+    border-radius: 10px;
 }
 .filters .filter-buttons{
     display: flex;
@@ -71,15 +108,39 @@ body {
 }
 .all{
     flex: 1;
+    background-color: #2A2F33;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
 .completed{
     flex: 1;
+    background-color: #2A2F33;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
 }
 .incomplete{
     flex: 1;
+    background-color: #2A2F33;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
 }
 .filters .count{
     display: flex;
     gap: 20px;
     margin-left: 20px;
+}
+.filters .count .span{
+    flex: 1;
+    color: whitesmoke;
+}
+.filters .count .clear {
+    flex: 1;
+    background-color: #2A2F33;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
 }
