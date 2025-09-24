@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Task Tracker App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>
-            Task Tracker App
-        </h1>
+
+    <header class="header">
+        <h1>Task Tracker App</h1>
     </header>
-    <nav>
-
-    </nav>
-    <section>
-
+    <br>
+    <section class="newtask">
+        <div class="input">
+            <label for="input">Add new task</label>
+            <input type="text" id="input">
+            <button>Add</button>
+        </div>
+        <div class="date">
+            <label for="date">Date</label>
+            <input type="date" id="date">
+        </div>
     </section>
-    <footer>
+    <br>
+    <section class="filters">
+        <div class="filter-buttons">
+            <button class="all">All tasks</button>
+            <button class="completed">Completed tasks</button>
+            <button class="incomplete">Incomplete tasks</button>
+        </div>
+        <div class="count">
+            <span id="count">0 tasks</span>
+            <button class="clear">Clear completed tasks</button>
+        </div>
+    </section>
 
-    </footer>
+    <section class="tasklist">
+        <ul class="tasklist-ul"></ul>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
